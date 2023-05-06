@@ -1,0 +1,16 @@
+hellaswag:
+  id: hellaswag.val.ab-v1
+  metrics: [accuracy]
+hellaswag.val.ab-v1:
+  class: evals.elsuite.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hellaswag?split=validation
+    instructions: "Choose the most plausible continuation for the story."
+
+mmlu-abstract-algebra:
+  id: mmlu-abstract-algebra.val.ab-v1
+  metrics: [accuracy]
+mmlu-abstract-algebra.val.ab-v1:
+  class: evals.elsuite.multiple_choice:MultipleChoice
+  args:
+    dataset: hf://hendrycks_test?name=abstract_algebra&split=validation
